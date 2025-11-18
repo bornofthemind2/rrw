@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        allowedHosts: ['rrwilliams.onrender.com'] // Added allowedHosts to permit the specified host
       },
       plugins: [react()],
       define: {
